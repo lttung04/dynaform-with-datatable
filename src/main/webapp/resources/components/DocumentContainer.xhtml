@@ -1,0 +1,14 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:cc="http://java.sun.com/jsf/composite"
+	xmlns:p="http://primefaces.org/ui" xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:local="http://xmlns.jcp.org/jsf/composite/components">
+<cc:interface>
+</cc:interface>
+<cc:implementation>
+	<pe:dynaForm id="dyna-form" value="#{dynaFormController.model}" var="dynaData">
+		<pe:dynaFormControl type="FileUpload" for="fileUpload">
+			<local:DocumentTable id="fileUpload" notInDynaform="true" nameColumnRendered="true" />
+		</pe:dynaFormControl>
+	</pe:dynaForm>
+</cc:implementation>
+</html>
